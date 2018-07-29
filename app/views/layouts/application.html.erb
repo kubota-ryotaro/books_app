@@ -28,8 +28,7 @@
       <%= link_to "Login", new_user_session_path, class: 'navbar-link'  %>
     <% end %>
     </p>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="/ideas">Ideas</a></li>
-    </ul>
+    <%= link_to "Sign in with Twitter", user_twitter_omniauth_authorize_path %>
+
   </body>
 </html>
